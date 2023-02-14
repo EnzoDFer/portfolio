@@ -7,6 +7,13 @@ interface ISlideProps {
   children?: React.ReactNode
 }
 
+/**
+ * Presentational component to mark a new section theme.
+ * @param id Slide id
+ * @param hsl Background color of slide in hsl format
+ * @param children Children element wihin Slide
+ * @returns Styled section element with children nodes
+ */
 export const Slide = ({id,hsl,children}: ISlideProps) => {
   return (
     <section
